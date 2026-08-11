@@ -1,0 +1,10 @@
+{
+  "name": "MegaStore FazleVai - Premium Digital Subscriptions",
+  "short_name": "MegaStore FazleVai",
+  "description": "Buy Netflix, Spotify, ChatGPT Go, Prime Video, CapCut Pro, Canva Pro, Adobe CC and more at affordable prices in Bangladesh.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#F8FAFC",
+  "theme_color": "#2563EB",
+  "icons": []
+}

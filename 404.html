@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | MegaStore FazleVai</title>
+  <meta name="description" content="The page you're looking for doesn't exist. Return to MegaStore FazleVai to browse premium digital subscriptions at affordable prices in Bangladesh.">
+  <meta name="robots" content="noindex, follow">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛒</text></svg>">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#2563EB">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-lang="en">
+
+  <header>
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="container nav-container">
+        <a href="index.html#home" class="brand-logo">
+          <div class="brand-icon">🛒</div>
+          <span class="color-fade" id="brandName">MegaStore</span>
+        </a>
+        <ul class="nav-links" id="navMenu">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#products">Products</a></li>
+          <li><a href="index.html#why-us">Why Choose Us</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="icon-btn" onclick="toggleTheme()" title="Toggle Theme" aria-label="Toggle light/dark theme">🌙</button>
+          <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu" aria-controls="navMenu"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="padding: 100px 0;">
+      <div class="container hero-content">
+        <span class="section-badge">🔍 Error 404</span>
+        <h1 class="hero-title" style="font-size: 2.75rem;">
+          <span class="gradient-text">Page</span> Not Found
+        </h1>
+        <p class="hero-subtitle">
+          Sorry, the page you're looking for doesn't exist or may have been moved.
+          Let's get you back to browsing premium digital subscriptions.
+        </p>
+        <div class="hero-buttons">
+          <a href="index.html#home" class="btn btn-primary">Back to Homepage ⚡</a>
+          <a href="https://wa.me/8801757919193" target="_blank" rel="noopener" class="btn btn-accent">Contact on WhatsApp 💬</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container text-center">
+      <div class="brand-logo" style="justify-content:center; margin-bottom: 12px;">
+        <div class="brand-icon">🛒</div>
+        <span class="color-fade">MegaStore FazleVai</span>
+      </div>
+      <p style="color:var(--text-muted); font-size: 14px;">Premium Digital Subscriptions at Affordable Prices in Bangladesh.</p>
+      <div class="footer-bottom">© <span id="year"></span> MegaStore FazleVai. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/8801757919193" target="_blank" rel="noopener" class="fab-whatsapp" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+    <div class="whatsapp-tooltip">
+      <span>Need Help?</span>
+    </div>
+    <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+  </a>
+
+  <script>
+    // Minimal inline script: only theme + mobile menu toggles are needed on this page.
+    function toggleTheme() { document.documentElement.setAttribute('data-theme', document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'); }
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('active');
+      document.querySelector('.hamburger').classList.toggle('active');
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      const yearEl = document.getElementById('year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* ==========================================================================
+   MegaStore FazleVai — Responsive Overrides
+   Breakpoints: 1024px (tablet), 768px (mobile nav), 480px (small phones)
+   ========================================================================== */
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) { .product-grid, .features-grid, .contact-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 768px) { 
+  .hero-title { font-size: 2.25rem; } 
+  .hamburger { display: flex; } 
+  .nav-links { position: fixed; top: 72px; left: 0; width: 100%; background: var(--bg-surface); flex-direction: column; padding: 24px; transform: translateY(-150%); transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); border-bottom: 1px solid var(--border-color); } 
+  .nav-links.active { transform: translateY(0); } 
+  .product-grid, .features-grid, .contact-grid { grid-template-columns: 1fr; } 
+  /* Hamburger Animation */
+  .hamburger.active span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+  .hamburger.active span:nth-child(2) { opacity: 0; }
+  .hamburger.active span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+}
+@media (max-width: 480px) {
+  #brandName { min-width: 78px; font-size: 1.05rem; }
+}
