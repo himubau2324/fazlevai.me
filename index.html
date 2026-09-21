@@ -3,31 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MegaStore FazleVai | Premium Digital Subscriptions in Bangladesh</title>
+  <title>MegaStore FazleVai | Premium Digital Subscriptions</title>
   <meta name="description" content="Buy Netflix Premium, Spotify, ChatGPT Go, Prime Video, CapCut Pro, Canva Pro, Adobe CC, LinkedIn Career at affordable prices in Bangladesh with instant delivery and full warranty.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://YOUR-DOMAIN.com/">
-
-  <!-- Favicon (self-contained inline SVG — no external file needed) -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛒</text></svg>">
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#2563EB">
-
-  <!-- Open Graph / social sharing -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="MegaStore FazleVai | Premium Digital Subscriptions in Bangladesh">
-  <meta property="og:description" content="Buy Netflix Premium, Spotify, ChatGPT Go, Prime Video, CapCut Pro, Canva Pro, Adobe CC, LinkedIn Career at affordable prices in Bangladesh with instant delivery and full warranty.">
-  <meta property="og:url" content="https://YOUR-DOMAIN.com/">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="MegaStore FazleVai | Premium Digital Subscriptions in Bangladesh">
-  <meta name="twitter:description" content="Buy Netflix Premium, Spotify, ChatGPT Go, Prime Video, CapCut Pro, Canva Pro, Adobe CC, LinkedIn Career at affordable prices in Bangladesh with instant delivery and full warranty.">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/jpeg" href="/favicon.jpg">
+  <link rel="shortcut icon" type="image/jpeg" href="/favicon.jpg">
+  <link rel="apple-touch-icon" href="/favicon.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  
+  <!-- Linked External CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body data-lang="en">
 
@@ -36,276 +20,233 @@
     <div class="intro-loader"></div>
   </div>
 
-  <!-- HEADER / NAVBAR -->
-  <header>
-    <nav class="navbar" aria-label="Primary navigation">
-      <div class="container nav-container">
-        <a href="#home" class="brand-logo">
-          <div class="brand-icon">🛒</div>
-          <span class="color-fade" id="brandName">MegaStore</span>
-        </a>
-        <ul class="nav-links" id="navMenu">
-          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-          <li><a href="#products" onclick="toggleMenu()">Products</a></li>
-          <li><a href="#why-us" onclick="toggleMenu()">Why Choose Us</a></li>
-          <li><a href="#faq" onclick="toggleMenu()">FAQ</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </ul>
-        <div class="nav-actions">
-          <button class="icon-btn" onclick="toggleTheme()" title="Toggle Theme" aria-label="Toggle light/dark theme">🌙</button>
-          <button class="icon-btn" onclick="openCartDrawer()" title="View Cart" aria-label="View cart">🛒 <span class="cart-badge" id="cartBadge">0</span></button>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <div class="brand-icon">🛒</div>
+        <span class="color-fade" id="brandName">MegaStore</span>
+      </a>
+      <ul class="nav-links" id="navMenu">
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#products" onclick="toggleMenu()">Products</a></li>
+        <li><a href="#why-us" onclick="toggleMenu()">Why Choose Us</a></li>
+        <li><a href="#faq" onclick="toggleMenu()">FAQ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" onclick="toggleTheme()" title="Toggle Theme">🌙</button>
+        <!-- Added id="cartButton" for the bubble animation -->
+        <button class="icon-btn" id="cartButton" onclick="openCartDrawer()" title="View Cart">🛒 <span class="cart-badge" id="cartBadge">0</span></button>
 
-          <!-- HEADER SEARCH (icon toggles into a search bar) -->
-          <div class="header-search-wrapper" id="searchWrapper">
-            <button class="icon-btn search-toggle-btn" onclick="toggleSearch()" title="Search" aria-label="Search products">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-            </button>
-            <div class="header-search-expand" id="searchExpand">
-              <svg class="header-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-              <label for="headerSearch" class="visually-hidden">Search products</label>
-              <input type="text" id="headerSearch" placeholder="Search products..." oninput="handleSearch(event)" autocomplete="off">
-              <button class="search-close-btn" onclick="closeSearch()" aria-label="Close search">&times;</button>
-              <div id="searchSuggestions" class="suggestions-dropdown"></div>
-            </div>
-          </div>
-
-          <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu" aria-controls="navMenu"><span></span><span></span><span></span></button>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <!-- HERO SECTION -->
-    <section class="hero" id="home">
-      <div class="container hero-content">
-        <span class="section-badge">
-          🔥 <span class="lang-en">Instant Digital Subscriptions in Bangladesh</span>
-          <span class="lang-bn">বাংলাদেশে তাৎক্ষণিক ডিজিটাল সাবস্ক্রিপশন</span>
-        </span>
-
-        <h1 class="hero-title">
-          <span class="lang-en"><span class="gradient-text">Premium</span> Digital Subscriptions at Affordable Prices</span>
-          <span class="lang-bn"><span class="gradient-text">সাশ্রয়ী মূল্যে</span> প্রিমিয়াম ডিজিটাল সাবস্ক্রিপশন</span>
-        </h1>
-
-        <p class="hero-subtitle">
-          <span class="lang-en">Spotify, Prime Video, CapCut Pro, Canva Pro, Crave, Neon NZ, Adobe CC, LinkedIn Career & ChatGPT Go at the best prices in Bangladesh.</span>
-          <span class="lang-bn">বাংলাদেশে সেরা দামে Spotify, Prime Video, CapCut Pro, Canva Pro, Crave, Neon NZ, Adobe CC, LinkedIn Career এবং ChatGPT Go।</span>
-        </p>
-
-        <div class="hero-buttons">
-          <a href="#products" class="btn btn-primary">
-            <span class="lang-en">Shop Now ⚡</span><span class="lang-bn">কেনাকাটা করুন ⚡</span>
-          </a>
-          <a href="https://wa.me/8801757919193" target="_blank" rel="noopener" class="btn btn-accent">
-            <span class="lang-en">Contact on WhatsApp 💬</span><span class="lang-bn">হোয়াটসঅ্যাপে যোগাযোগ 💬</span>
-          </a>
-        </div>
-
-        <div class="controls-wrapper" id="products">
-          <div class="category-pills" role="group" aria-label="Filter products by category">
-            <button class="pill-btn active" onclick="setCategory('all', this)">All</button>
-            <button class="pill-btn" onclick="setCategory('music', this)">Music</button>
-            <button class="pill-btn" onclick="setCategory('streaming', this)">Streaming</button>
-            <button class="pill-btn" onclick="setCategory('office', this)">Office / Design</button>
-            <button class="pill-btn" onclick="setCategory('ai', this)">AI</button>
-            <button class="pill-btn" onclick="setCategory('vpn', this)">VPN</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRODUCTS GRID SECTION -->
-    <section class="section-padding" style="padding-top: 0;" aria-label="Products">
-      <div class="container">
-        <div class="product-grid" id="productGrid">
-          <!-- Rendered dynamically by JavaScript from js/products-data.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY CHOOSE US SECTION -->
-    <section class="section-padding" id="why-us" style="background: var(--bg-surface);">
-      <div class="container text-center">
-        <span class="section-badge">Why MegaStore FazleVai</span>
-        <h2 class="section-title">
-          <span class="lang-en">Why Choose Our Service?</span>
-          <span class="lang-bn">আমাদের পরিষেবা কেন বেছে নেবেন?</span>
-        </h2>
-        <p class="section-subtitle">
-          <span class="lang-en">We provide advanced digital products with maximum reliability and security for Bangladeshi users.</span>
-          <span class="lang-bn">আমরা বাংলাদেশি ব্যবহারকারীদের জন্য সর্বোচ্চ নির্ভরযোগ্যতা এবং নিরাপত্তা সহ উন্নত ডিজিটাল পণ্য সরবরাহ করি।</span>
-        </p>
-
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-icon-box" aria-hidden="true">⚡</div>
-            <h3><span class="lang-en">Instant Delivery</span><span class="lang-bn">তাৎক্ষণিক ডেলিভারি</span></h3>
-            <p><span class="lang-en">Get your subscription details delivered via WhatsApp within 5 to 15 minutes.</span><span class="lang-bn">৫ থেকে ১৫ মিনিটের মধ্যে হোয়াটসঅ্যাপে আপনার সাবস্ক্রিপশনের তথ্য ডেলিভারি পান।</span></p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon-box" aria-hidden="true">৳</div>
-            <h3><span class="lang-en">Affordable Prices</span><span class="lang-bn">সাশ্রয়ী মূল্য</span></h3>
-            <p><span class="lang-en">Save up to 70% compared to international rates.</span><span class="lang-bn">আন্তর্জাতিক রেটের তুলনায় ৭০% পর্যন্ত সাশ্রয় করুন।</span></p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon-box" aria-hidden="true">🛡️</div>
-            <h3><span class="lang-en">Full Warranty</span><span class="lang-bn">সম্পূর্ণ ওয়ারেন্টি</span></h3>
-            <p><span class="lang-en">Enjoy 100% replacement warranty for the entire duration of your subscription.</span><span class="lang-bn">আপনার সাবস্ক্রিপশনের পুরো সময়কালের জন্য ১০০% রিপ্লেসমেন্ট ওয়ারেন্টি উপভোগ করুন।</span></p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon-box" aria-hidden="true">🎧</div>
-            <h3><span class="lang-en">24/7 Support</span><span class="lang-bn">২৪/৭ সাপোর্ট</span></h3>
-            <p><span class="lang-en">Round-the-clock customer support team ready via WhatsApp and Telegram.</span><span class="lang-bn">হোয়াটসঅ্যাপ এবং টেলিগ্রামের মাধ্যমে সার্বক্ষণিক কাস্টমার সাপোর্ট টিম প্রস্তুত।</span></p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon-box" aria-hidden="true">🔒</div>
-            <h3><span class="lang-en">Safe & Secure</span><span class="lang-bn">নিরাপদ ও সুরক্ষিত</span></h3>
-            <p><span class="lang-en">Completely authentic premium accounts with personal privacy.</span><span class="lang-bn">ব্যক্তিগত সুরক্ষা সহ সম্পূর্ণ আসল প্রিমিয়াম অ্যাকাউন্ট।</span></p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon-box" aria-hidden="true">✅</div>
-            <h3><span class="lang-en">Trusted Seller</span><span class="lang-bn">বিশ্বস্ত বিক্রেতা</span></h3>
-            <p><span class="lang-en">A trusted platform for thousands of satisfied customers across Bangladesh.</span><span class="lang-bn">সারা বাংলাদেশে হাজার হাজার সন্তুষ্ট গ্রাহকের বিশ্বস্ত প্রতিষ্ঠান।</span></p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon-box" aria-hidden="true">🚀</div>
-            <h3><span class="lang-en">Fast Response</span><span class="lang-bn">দ্রুত রেসপন্স</span></h3>
-            <p><span class="lang-en">Our support team replies almost instantly.</span><span class="lang-bn">আমাদের সাপোর্ট টিম প্রায় সাথে সাথেই উত্তর দেয়।</span></p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon-box" aria-hidden="true">💳</div>
-            <h3><span class="lang-en">Easy bKash / Nagad</span><span class="lang-bn">সহজ বিকাশ / নগদ</span></h3>
-            <p><span class="lang-en">Easy payment via mobile banking without the hassle of international credit cards.</span><span class="lang-bn">আন্তর্জাতিক ক্রেডিট কার্ডের ঝামেলা ছাড়াই মোবাইল ব্যাংকিংয়ে সহজে পেমেন্ট।</span></p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS SECTION -->
-    <section class="section-padding">
-      <div class="container text-center">
-        <span class="section-badge">Testimonials</span>
-        <h2 class="section-title">
-          <span class="lang-en">What Our Clients Say</span>
-          <span class="lang-bn">গ্রাহকরা যা বলছেন</span>
-        </h2>
-        <p class="section-subtitle">
-          <span class="lang-en">Real feedback from satisfied users across Bangladesh.</span>
-          <span class="lang-bn">সারা বাংলাদেশের সন্তুষ্ট ব্যবহারকারীদের বাস্তব প্রতিক্রিয়া।</span>
-        </p>
-        <div class="testimonial-wrapper">
-          <div class="testimonial-track" id="testimonialTrack">
-            <div class="testimonial-slide">
-              <div class="avatar"><img src="https://i.postimg.cc/G3FNRBgB/images.jpg" alt="Tanvir Ahmed" loading="lazy"></div>
-              <div class="stars" aria-hidden="true">★★★★★</div>
-              <p class="review-text">
-                <span class="lang-en">"Received my Spotify 12 months and Canva Pro account in just 5 minutes! Super fast delivery and great support on WhatsApp."</span>
-                <span class="lang-bn">"মাত্র ৫ মিনিটে আমার স্পটিফাই ১২ মাসের এবং ক্যানভা প্রো অ্যাকাউন্ট পেয়েছি! হোয়াটসঅ্যাপে সুপার ফাস্ট ডেলিভারি এবং দুর্দান্ত সাপোর্ট।"</span>
-              </p>
-              <div class="reviewer-name">Tanvir Ahmed</div>
-            </div>
-            <div class="testimonial-slide">
-              <div class="avatar"><img src="https://i.postimg.cc/8z0X4Lcw/images.jpg" alt="Sadia Karim" loading="lazy"></div>
-              <div class="stars" aria-hidden="true">★★★★★</div>
-              <p class="review-text">
-                <span class="lang-en">"Bought Adobe Creative Cloud 1 year subscription. Everything worked smoothly on my original Adobe account. Highly recommended!"</span>
-                <span class="lang-bn">"অ্যাডোবি ক্রিয়েটিভ ক্লাউড ১ বছরের সাবস্ক্রিপশন কিনেছি। আমার আসল অ্যাডোবি অ্যাকাউন্টে সবকিছু মসৃণভাবে কাজ করেছে। অত্যন্ত প্রস্তাবিত!"</span>
-              </p>
-              <div class="reviewer-name">Sadia Karim</div>
-            </div>
-            <div class="testimonial-slide">
-              <div class="avatar"><img src="https://i.postimg.cc/PJTSJ4VD/images.jpg" alt="Robiul Hasan" loading="lazy"></div>
-              <div class="stars" aria-hidden="true">★★★★★</div>
-              <p class="review-text">
-                <span class="lang-en">"CapCut Pro and ChatGPT Go activation was incredibly fast. Paying via bKash is very easy!"</span>
-                <span class="lang-bn">"ক্যাপকাট প্রো এবং চ্যাটজিপিটি গো অ্যাক্টিভেশন অত্যন্ত দ্রুত ছিল। বিকাশের মাধ্যমে পেমেন্ট করাটা খুবই সহজ!"</span>
-              </p>
-              <div class="reviewer-name">Robiul Hasan</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ SECTION -->
-    <section class="section-padding" id="faq" style="background: var(--bg-surface);">
-      <div class="container">
-        <div class="text-center">
-          <span class="section-badge">FAQ</span>
-          <h2 class="section-title">
-            <span class="lang-en">Frequently Asked Questions</span>
-            <span class="lang-bn">সাধারণ জিজ্ঞাসা</span>
-          </h2>
-          <p class="section-subtitle">
-            <span class="lang-en">Got questions? We have answers for everything you need to know.</span>
-            <span class="lang-bn">কোনো প্রশ্ন আছে? আপনার জানার প্রয়োজনীয় সব উত্তর আমাদের কাছে আছে।</span>
-          </p>
-        </div>
-        <div class="faq-container">
-          <div class="faq-item" onclick="toggleFaq(this)">
-            <div class="faq-header"><span>How will I receive my account?</span><span class="faq-toggle-icon" aria-hidden="true">▼</span></div>
-            <div class="faq-body">After clicking checkout, your order request sends directly to our WhatsApp (+8801757919193). Once payment is confirmed via bKash or Nagad, login details or activation link will be sent straight to your chat within minutes.</div>
-          </div>
-          <div class="faq-item" onclick="toggleFaq(this)">
-            <div class="faq-header"><span>How does the multiple plan selector work?</span><span class="faq-toggle-icon" aria-hidden="true">▼</span></div>
-            <div class="faq-body">Each product card has dropdowns for Account Type and Validity. Selecting these instantly updates the price and details!</div>
-          </div>
-          <div class="faq-item" onclick="toggleFaq(this)">
-            <div class="faq-header"><span>Do you provide warranty?</span><span class="faq-toggle-icon" aria-hidden="true">▼</span></div>
-            <div class="faq-body">Absolutely. All our subscriptions come with full replacement warranty covering the entire duration purchased.</div>
-          </div>
-          <div class="faq-item" onclick="toggleFaq(this)">
-            <div class="faq-header"><span>How long does delivery take?</span><span class="faq-toggle-icon" aria-hidden="true">▼</span></div>
-            <div class="faq-body">Standard delivery takes between 5 to 15 minutes during active working hours (9 AM - 12 AM).</div>
-          </div>
-          <div class="faq-item" onclick="toggleFaq(this)">
-            <div class="faq-header"><span>Can I renew my subscription later?</span><span class="faq-toggle-icon" aria-hidden="true">▼</span></div>
-            <div class="faq-body">Yes, you can easily renew the same account before or after your subscription expires.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section class="section-padding" id="contact">
-      <div class="container text-center">
-        <span class="section-badge">Get In Touch</span>
-        <h2 class="section-title">
-          <span class="lang-en">Need Any Custom Plan or Help?</span>
-          <span class="lang-bn">কাস্টম প্ল্যান বা সাহায্য প্রয়োজন?</span>
-        </h2>
-        <p class="section-subtitle">
-          <span class="lang-en">Reach out directly through any of our channels below.</span>
-          <span class="lang-bn">নিচের যেকোনো মাধ্যমের সাহায্যে সরাসরি যোগাযোগ করুন।</span>
-        </p>
-
-        <div class="contact-grid">
-          <a href="https://wa.me/8801757919193" target="_blank" rel="noopener" class="contact-card">
-            <div style="font-size:28px;" aria-hidden="true">💬</div>
-            <strong>WhatsApp</strong>
-            <span style="font-size:12px; color:var(--text-muted);">+880 1757-919193</span>
-          </a>
-          <a href="https://www.facebook.com/fr9098" target="_blank" rel="noopener" class="contact-card">
-            <div style="font-size:28px;" aria-hidden="true">🌐</div>
-            <strong>Facebook Page</strong>
-            <span style="font-size:12px; color:var(--text-muted);">https://www.facebook.com/fr9098</span>
-          </a>
-          <a href="https://t.me/fazle_vai" target="_blank" rel="noopener" class="contact-card">
-            <div style="font-size:28px;" aria-hidden="true">✈️</div>
-            <strong>Telegram</strong>
-            <span style="font-size:12px; color:var(--text-muted);">@fazle_vai</span>
-          </a>
-          <button class="contact-card" onclick="copyNumber()" style="cursor:pointer; width:100%;" type="button">
-            <div style="font-size:28px;" aria-hidden="true">📋</div>
-            <strong>Copy Number</strong>
-            <span id="copyText" style="font-size:12px; color:var(--text-muted);">Click to Copy WhatsApp</span>
+        <!-- HEADER SEARCH -->
+        <div class="header-search-wrapper" id="searchWrapper">
+          <button class="icon-btn search-toggle-btn" onclick="toggleSearch()" title="Search" aria-label="Search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
           </button>
+          <div class="header-search-expand" id="searchExpand">
+            <svg class="header-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            <input type="text" id="headerSearch" placeholder="Search products..." oninput="handleSearch(event)" autocomplete="off">
+            <button class="search-close-btn" onclick="closeSearch()" aria-label="Close search">&times;</button>
+            <div id="searchSuggestions" class="suggestions-dropdown"></div>
+          </div>
+        </div>
+
+        <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <span class="section-badge">
+        🔥 <span class="lang-en">Instant Digital Subscriptions in Bangladesh</span>
+        <span class="lang-bn">বাংলাদেশে তাৎক্ষণিক ডিজিটাল সাবস্ক্রিপশন</span>
+      </span>
+      
+      <h1 class="hero-title">
+        <span class="lang-en"><span class="gradient-text">Premium</span> Digital Subscriptions at Affordable Prices</span>
+        <span class="lang-bn"><span class="gradient-text">সাশ্রয়ী মূল্যে</span> প্রিমিয়াম ডিজিটাল সাবস্ক্রিপশন</span>
+      </h1>
+      
+      <p class="hero-subtitle">
+        <span class="lang-en">Spotify, Prime Video, CapCut Pro, Canva Pro, Crave, Neon NZ, Adobe CC, LinkedIn Career & ChatGPT Go at the best prices in Bangladesh.</span>
+        <span class="lang-bn">বাংলাদেশে সেরা দামে Spotify, Prime Video, CapCut Pro, Canva Pro, Crave, Neon NZ, Adobe CC, LinkedIn Career এবং ChatGPT Go।</span>
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#products" class="btn btn-primary">
+          <span class="lang-en">Shop Now ⚡</span><span class="lang-bn">কেনাকাটা করুন ⚡</span>
+        </a>
+        <a href="https://wa.me/8801757919193" target="_blank" class="btn btn-accent">
+          <span class="lang-en">Contact on WhatsApp 💬</span><span class="lang-bn">হোয়াটসঅ্যাপে যোগাযোগ 💬</span>
+        </a>
+      </div>
+
+      <div class="controls-wrapper" id="products">
+        <div class="category-pills">
+          <button class="pill-btn active" onclick="setCategory('all', this)">All</button>
+          <button class="pill-btn" onclick="setCategory('music', this)">Music</button>
+          <button class="pill-btn" onclick="setCategory('streaming', this)">Streaming</button>
+          <button class="pill-btn" onclick="setCategory('office', this)">Office / Design</button>
+          <button class="pill-btn" onclick="setCategory('ai', this)">AI</button>
+          <button class="pill-btn" onclick="setCategory('vpn', this)">VPN</button>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <!-- PRODUCTS GRID SECTION -->
+  <section class="section-padding" style="padding-top: 0;">
+    <div class="container">
+      <div class="product-grid" id="productGrid">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US SECTION -->
+  <section class="section-padding" id="why-us" style="background: var(--bg-surface);">
+    <div class="container text-center">
+      <span class="section-badge">Why MegaStore FazleVai</span>
+      <h2 class="section-title">
+        <span class="lang-en">Why Choose Our Service?</span>
+        <span class="lang-bn">আমাদের পরিষেবা কেন বেছে নেবেন?</span>
+      </h2>
+      <p class="section-subtitle">
+        <span class="lang-en">We provide advanced digital products with maximum reliability and security for Bangladeshi users.</span>
+        <span class="lang-bn">আমরা বাংলাদেশি ব্যবহারকারীদের জন্য সর্বোচ্চ নির্ভরযোগ্যতা এবং নিরাপত্তা সহ উন্নত ডিজিটাল পণ্য সরবরাহ করি।</span>
+      </p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-box">⚡</div>
+          <h3><span class="lang-en">Instant Delivery</span><span class="lang-bn">তাৎক্ষণিক ডেলিভারি</span></h3>
+          <p><span class="lang-en">Get your subscription details delivered via WhatsApp within 5 to 15 minutes.</span><span class="lang-bn">৫ থেকে ১৫ মিনিটের মধ্যে হোয়াটসঅ্যাপে আপনার সাবস্ক্রিপশনের তথ্য ডেলিভারি পান।</span></p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-box">৳</div>
+          <h3><span class="lang-en">Affordable Prices</span><span class="lang-bn">সাশ্রয়ী মূল্য</span></h3>
+          <p><span class="lang-en">Save up to 70% compared to international rates.</span><span class="lang-bn">আন্তর্জাতিক রেটের তুলনায় ৭০% পর্যন্ত সাশ্রয় করুন।</span></p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-box">🛡️</div>
+          <h3><span class="lang-en">Full Warranty</span><span class="lang-bn">সম্পূর্ণ ওয়ারেন্টি</span></h3>
+          <p><span class="lang-en">Enjoy 100% replacement warranty for the entire duration of your subscription.</span><span class="lang-bn">আপনার সাবস্ক্রিপশনের পুরো সময়কালের জন্য ১০০% রিপ্লেসমেন্ট ওয়ারেন্টি উপভোগ করুন।</span></p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-box">🎧</div>
+          <h3><span class="lang-en">24/7 Support</span><span class="lang-bn">২৪/৭ সাপোর্ট</span></h3>
+          <p><span class="lang-en">Round-the-clock customer support team ready via WhatsApp and Telegram.</span><span class="lang-bn">হোয়াটসঅ্যাপ এবং টেলিগ্রামের মাধ্যমে সার্বক্ষণিক কাস্টমার সাপোর্ট টিম প্রস্তুত।</span></p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-box">🔒</div>
+          <h3><span class="lang-en">Safe & Secure</span><span class="lang-bn">নিরাপদ ও সুরক্ষিত</span></h3>
+          <p><span class="lang-en">Completely authentic premium accounts with personal privacy.</span><span class="lang-bn">ব্যক্তিগত সুরক্ষা সহ সম্পূর্ণ আসল প্রিমিয়াম অ্যাকাউন্ট।</span></p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-box">✅</div>
+          <h3><span class="lang-en">Trusted Seller</span><span class="lang-bn">বিশ্বস্ত বিক্রেতা</span></h3>
+          <p><span class="lang-en">A trusted platform for thousands of satisfied customers across Bangladesh.</span><span class="lang-bn">সারা বাংলাদেশে হাজার হাজার সন্তুষ্ট গ্রাহকের বিশ্বস্ত প্রতিষ্ঠান।</span></p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-box">🚀</div>
+          <h3><span class="lang-en">Fast Response</span><span class="lang-bn">দ্রুত রেসপন্স</span></h3>
+          <p><span class="lang-en">Our support team replies almost instantly.</span><span class="lang-bn">আমাদের সাপোর্ট টিম প্রায় সাথে সাথেই উত্তর দেয়।</span></p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-box">💳</div>
+          <h3><span class="lang-en">Easy bKash / Nagad</span><span class="lang-bn">সহজ বিকাশ / নগদ</span></h3>
+          <p><span class="lang-en">Easy payment via mobile banking without the hassle of international credit cards.</span><span class="lang-bn">আন্তর্জাতিক ক্রেডিট কার্ডের ঝামেলা ছাড়াই মোবাইল ব্যাংকিংয়ে সহজে পেমেন্ট।</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section class="section-padding">
+    <div class="container text-center">
+      <span class="section-badge">Testimonials</span>
+      <h2 class="section-title">
+        <span class="lang-en">What Our Clients Say</span>
+        <span class="lang-bn">গ্রাহকরা যা বলছেন</span>
+      </h2>
+      <p class="section-subtitle">
+        <span class="lang-en">Real feedback from satisfied users across Bangladesh.</span>
+        <span class="lang-bn">সারা বাংলাদেশের সন্তুষ্ট ব্যবহারকারীদের বাস্তব প্রতিক্রিয়া।</span>
+      </p>
+      <div class="testimonial-wrapper">
+        <div class="testimonial-track" id="testimonialTrack">
+          <div class="testimonial-slide">
+            <div class="avatar"><img src="https://i.postimg.cc/G3FNRBgB/images.jpg" alt="Tanvir Ahmed"></div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              <span class="lang-en">"Received my Spotify 12 months and Canva Pro account in just 5 minutes! Super fast delivery and great support on WhatsApp."</span>
+              <span class="lang-bn">"মাত্র ৫ মিনিটে আমার স্পটিফাই ১২ মাসের এবং ক্যানভা প্রো অ্যাকাউন্ট পেয়েছি! হোয়াটসঅ্যাপে সুপার ফাস্ট ডেলিভারি এবং দুর্দান্ত সাপোর্ট।"</span>
+            </p>
+            <div class="reviewer-name">Tanvir Ahmed</div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="avatar"><img src="https://i.postimg.cc/8z0X4Lcw/images.jpg" alt="Sadia Karim"></div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              <span class="lang-en">"Bought Adobe Creative Cloud 1 year subscription. Everything worked smoothly on my original Adobe account. Highly recommended!"</span>
+              <span class="lang-bn">"অ্যাডোবি ক্রিয়েটিভ ক্লাউড ১ বছরের সাবস্ক্রিপশন কিনেছি। আমার আসল অ্যাডোবি অ্যাকাউন্টে সবকিছু মসৃণভাবে কাজ করেছে। অত্যন্ত প্রস্তাবিত!"</span>
+            </p>
+            <div class="reviewer-name">Sadia Karim</div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="avatar"><img src="https://i.postimg.cc/PJTSJ4VD/images.jpg" alt="Robiul Hasan"></div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              <span class="lang-en">"CapCut Pro and ChatGPT Go activation was incredibly fast. Paying via bKash is very easy!"</span>
+              <span class="lang-bn">"ক্যাপকাট প্রো এবং চ্যাটজিপিটি গো অ্যাক্টিভেশন অত্যন্ত দ্রুত ছিল। বিকাশের মাধ্যমে পেমেন্ট করাটা খুবই সহজ!"</span>
+            </p>
+            <div class="reviewer-name">Robiul Hasan</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="section-padding" id="faq" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-badge">FAQ</span>
+        <h2 class="section-title">
+          <span class="lang-en">Frequently Asked Questions</span>
+          <span class="lang-bn">সাধারণ জিজ্ঞাসা</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="lang-en">Got questions? We have answers for everything you need to know.</span>
+          <span class="lang-bn">কোনো প্রশ্ন আছে? আপনার জানার প্রয়োজনীয় সব উত্তর আমাদের কাছে আছে।</span>
+        </p>
+      </div>
+      <div class="faq-container">
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-header"><span>How will I receive my account?</span><span class="faq-toggle-icon">▼</span></div>
+          <div class="faq-body">After clicking checkout, your order request sends directly to our WhatsApp (+8801757919193). Once payment is confirmed via bKash or Nagad, login details or activation link will be sent straight to your chat within minutes.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-header"><span>How does the multiple plan selector work?</span><span class="faq-toggle-icon">▼</span></div>
+          <div class="faq-body">Each product card has dropdowns for Account Type and Validity. Selecting these instantly updates the price and details!</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-header"><span>Do you provide warranty?</span><span class="faq-toggle-icon">▼</span></div>
+          <div class="faq-body">Absolutely. All our subscriptions come with full replacement warranty covering the entire duration purchased.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-header"><span>How long does delivery take?</span><span class="faq-toggle-icon">▼</span></div>
+          <div class="faq-body">Standard delivery takes between 5 to 15 minutes during active working hours (9 AM - 12 AM).</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-header"><span>Can I renew my subscription later?</span><span class="faq-toggle-icon">▼</span></div>
+          <div class="faq-body">Yes, you can easily renew the same account before or after your subscription expires.</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer>
@@ -315,7 +256,13 @@
         <span class="color-fade">MegaStore FazleVai</span>
       </div>
       <p style="color:var(--text-muted); font-size: 14px;">Premium Digital Subscriptions at Affordable Prices in Bangladesh.</p>
-      <div class="footer-bottom">© <span id="year"></span> MegaStore FazleVai. All Rights Reserved.</div>
+      <nav class="footer-links">
+        <a href="about.html">About MegaStore</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="product-description.html">Product Description</a>
+        <a href="refund-policy.html">Refund Policy</a>
+      </nav>
+      <div class="footer-bottom" style="margin-top: 20px;">© <span id="year"></span> MegaStore FazleVai. All Rights Reserved. | <a href="/admin.html" style="text-decoration: underline;">Admin Panel</a></div>
     </div>
   </footer>
 
@@ -328,10 +275,10 @@
 
   <!-- SLIDE-OUT CART DRAWER -->
   <div class="cart-drawer-overlay" id="cartOverlay" onclick="closeCartDrawer()"></div>
-  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+  <aside class="cart-drawer" id="cartDrawer">
     <div class="cart-header">
-      <div class="cart-title">Your Cart 🛒</div>
-      <button class="close-btn" style="font-size:24px; background:none; border:none; cursor:pointer;" onclick="closeCartDrawer()" aria-label="Close cart">&times;</button>
+      <div class="cart-title" style="font-size: 1.25rem; font-weight: 800;">Your Cart 🛒</div>
+      <button class="close-btn" style="font-size:24px; background:none; border:none; cursor:pointer;" onclick="closeCartDrawer()">&times;</button>
     </div>
     <div class="cart-body" id="cartItemsContainer"></div>
     <div class="cart-footer">
@@ -344,19 +291,20 @@
   </aside>
 
   <!-- LANGUAGE TOGGLE & WHATSAPP FLOATING BUTTONS -->
-  <button id="langToggleBtn" class="fab-lang" onclick="toggleLanguage()" title="Translate to Bengali" aria-label="Translate to Bengali">বাং</button>
+  <button id="langToggleBtn" class="fab-lang" onclick="toggleLanguage()" title="Translate to Bengali">বাং</button>
 
-  <a href="https://wa.me/8801757919193" target="_blank" rel="noopener" class="fab-whatsapp" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+  <a href="https://wa.me/8801757919193" target="_blank" class="fab-whatsapp" title="Chat on WhatsApp">
     <div class="whatsapp-tooltip">
       <span class="lang-en">Need Help?</span><span class="lang-bn">সাহায্য লাগবে?</span>
     </div>
-    <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+    <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
   </a>
 
-  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+  <div class="toast-container" id="toastContainer"></div>
 
-  <!-- JAVASCRIPT LOGIC -->
-  <script src="js/products-data.js" defer></script>
-  <script src="js/main.js" defer></script>
+  <!-- Supabase Library -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <!-- Linked External JS -->
+  <script src="script.js"></script>
 </body>
 </html>
